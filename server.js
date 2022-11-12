@@ -6,6 +6,7 @@ const cors = require('cors');
 // const mongoose = require('mongoose');
 const Handlers = require('./modules/handlers');
 const verifyUser = require('./auth.js');
+const SpotifyWebApi = require('spotify-web-api-node');
 
 const app = express();
 app.use(cors());
@@ -25,6 +26,7 @@ const PORT = process.env.PORT || 3002;
 
 app.get('/', (req, res) => res.send('test request received'));
 
+
 // Search keyword for tracks from user input
 // app.get('/search', Handlers.getKeyword);
 
@@ -32,7 +34,7 @@ app.get('/', (req, res) => res.send('test request received'));
 // app.get('/search', Handlers.getGenre);
 
 // // Get playlist from Spotify
-app.get('/playlist', Handlers.getPlaylist);
+// app.get('/playlist', Handlers.getPlaylist);
 
 // // Get saved playlist from database
 // app.get('/playlist', Handlers.getSavedPlaylist);
