@@ -12,7 +12,7 @@ const app = express();
 app.use(cors());
 app.use(verifyUser);
 
-app.use(express.json()); // has server update with json data 
+app.use(express.json()); // has server update with json data
 
 const PORT = process.env.PORT || 3002;
 
@@ -30,7 +30,7 @@ app.get('/', (req, res) => res.send('test request received'));
 // Search keyword for tracks from user input
 // app.get('/search', Handlers.getKeyword);
 
-// // Search for genre from user input 
+// // Search for genre from user input
 // app.get('/search', Handlers.getGenre);
 
 // // Get playlist from Spotify
