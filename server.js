@@ -26,24 +26,24 @@ const PORT = process.env.PORT || 3002;
 app.get('/', (req, res) => res.send('test request received'));
 
 // Search keyword for tracks from user input
-app.get('/search', Handlers.getKeyword);
+// app.get('/search', Handlers.getKeyword);
 
-// Search for genre from user input 
-app.get('/search', Handlers.getGenre);
+// // Search for genre from user input 
+// app.get('/search', Handlers.getGenre);
 
-// Get playlist from Spotify
-app.get('/playlist/{playlist_id}', Handlers.getPlaylist);
+// // Get playlist from Spotify
+app.get('/playlist', Handlers.getPlaylist);
 
-// Get saved playlist from database
-app.get('/playlist', Handlers.getSavedPlaylist);
+// // Get saved playlist from database
+// app.get('/playlist', Handlers.getSavedPlaylist);
 
-// Create playlist
-app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
+// // Create playlist
+// app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
 
-// Delete playlist
-app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
+// // Delete playlist
+// app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
 
-// Annotate playlist
-app.put('/notes', Handlers.updateNote);
+// // Annotate playlist
+// app.put('/notes', Handlers.updateNote);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
