@@ -30,7 +30,8 @@ async function seed() {
       }],
       limit: 12,
     },
-    playlist_id: '12345'
+    playlist_id: '12345',
+    uri: 'spotify:album:1TIUsv8qmYLpBEhvmBmyBk'
   });
 
   await Playlist.create({
@@ -45,7 +46,8 @@ async function seed() {
       }],
       limit: 12,
     },
-    playlist_id: '12345'
+    playlist_id: '12345',
+    uri: 'spotify:album:1TIUsv8qmYLpBEhvmBmyBk'
   });
 
   await Playlist.create({
@@ -60,7 +62,8 @@ async function seed() {
       }],
       limit: 12,
     },
-    playlist_id: '12345'
+    playlist_id: '12345',
+    uri: 'spotify:album:1TIUsv8qmYLpBEhvmBmyBk'
   });
   mongoose.disconnect();
 }
