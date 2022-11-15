@@ -93,6 +93,8 @@ app.get('/callback', function (req, res) {
       const refresh_token = result.data.refresh_token;
       console.log('ACCESS_TOKEN: ', access_token);
       console.log('REFRESH_TOKEN: ', refresh_token);
+      // TODO: I wish to run the the result.data through a class to construct a new response obj that will include the user's spotify profile and the access_token and refresh_token.
+      // That instance will then be sent to the frontend to be saved to state.
 
       const options = {
         baseURL: 'https://api.spotify.com/v1/me',
@@ -102,8 +104,12 @@ app.get('/callback', function (req, res) {
       // use the access token to access the Spotify Web API
       axios(options).then(result => {
         console.log('USE THE ACCESS TOKEN TO ACCESS THE SPOTIFY API: ', result.data);
+        // TODO: I wish to send the new instance of the constructed response obj that includes the user's spotify profile and the access_token and refresh_token.
+        // currently blocked by status code 303.
+        res.status(200).send(result.data);
 
         // we can also pass the token to the browser to make requests from there
+        // we probably don't want to redirect from the backend. A res.send works.
         // res.redirect('/#' +
         //   querystring.stringify({
         //     access_token: access_token,
