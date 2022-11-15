@@ -40,6 +40,10 @@ app.get('/playlist', Handlers.getSavedPlaylist);
 // // Create playlist
 // app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
 
+// Save playlist to MongoDB
+app.post('/playlist', Handlers.savePlaylist);
+
+
 // // Delete playlist
 // app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
 

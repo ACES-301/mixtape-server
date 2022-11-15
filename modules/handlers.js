@@ -45,6 +45,18 @@ Handlers.getSavedPlaylist = async (req, res, next) => {
     next(error);
   }
 };
+
+Handlers.savePlaylist = async (req, res, next) => {
+  try {
+    // if I pass in an empty object, that tells Mongoose to get ALL the documents from the database
+    const savedPlaylist = await Playlist.create(req.body);
+    res.status(201).send(savedPlaylist);
+  } catch(error) {
+    error.customMessage = 'Something went wrong when creating your book';
+    console.error(error.customMessage + error);
+    next(error);
+  }
+};
 // class Playlist {
 //   constructor(tracks) {
 //     this.items = tracks.
