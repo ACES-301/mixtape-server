@@ -3,124 +3,147 @@
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
-// const axios = require('axios');
-// const mongoose = require('mongoose');
-// const Handlers = require('./modules/handlers');
-// const verifyUser = require('./auth.js');
-const SpotifyWebApi = require('spotify-web-api-node');
-// const CLIENT_ID = process.env.CLIENT_ID;
-// const CLIENT_SECRET = process.env.CLIENT_SECRET;
-// const REDIRECT_URI = process.env.REDIRECT_URI;
+const axios = require('axios');
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+const redirect_uri = process.env.REDIRECT_URI;
 //querystring library is deprecated
-// const querystring = require('query-string');
+const querystring = require('query-string');
+var cookieParser = require('cookie-parser');
 
 const app = express();
 app.use(cors());
-// app.use(verifyUser);
-
 app.use(express.json()); // has server update with json data
+app.use(express.static(__dirname + '/public'))
+  .use(cors())
+  .use(cookieParser());
 
 const PORT = process.env.PORT || 3002;
+const stateKey = 'spotify_auth_state';
 
-// mongoose.connect(process.env.MONGO_CONNECTION, {useNewUrlParser: true, useUnifiedTopology: true});
-// const db = mongoose.connection;
-
-// db.on('error', console.error.bind(console, 'connection error:'));
-// db.once('open', function() {
-//   console.log('Mongoose is connected');
-// });
-
-
-//https://www.newline.co/courses/build-a-spotify-connected-app/implementing-the-authorization-code-flow
-//https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
 /**
  * Generates a random string containing numbers and letters
  * @param  {number} length The length of the string
  * @return {string} The generated string
  */
-// const generateRandomString = length => {
-//   let text = '';
-//   const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-//   for (let i = 0; i < length; i++) {
-//     text += possible.charAt(Math.floor(Math.random() * possible.length));
-//   }
-//   return text;
-// };
+var generateRandomString = function (length) {
+  var text = '';
+  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
+  for (var i = 0; i < length; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  }
+  return text;
+};
 
-// const stateKey = 'spotify_auth_state';
+app.get('/login', function (req, res) {
 
-app.get('/', (req, res) => res.send('test request received'));
+  var state = generateRandomString(16);
+  res.cookie(stateKey, state);
 
-app.post('/refresh', (req, res) => {
-  const refreshToken = req.body.refreshToken;
-
-  const spotifyApi = new SpotifyWebApi({
-    redirectUri: process.env.REDIRECT_URI,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-    refreshToken,
-  });
-
-  spotifyApi
-    .refreshAccessToken()
-    .then(data => {
-      console.log(data.body);
-      res.json({
-        accessToken: data.body.access_token,
-        expiresIn: data.body.expires_in,
-      });
-    })
-    .catch(error => {
-      console.log(error.message);
-      res.sendStatus(400);
-    });
+  // your application requests authorization
+  var scope = 'user-read-private user-read-email';
+  res.redirect('https://accounts.spotify.com/authorize?' +
+    querystring.stringify({
+      response_type: 'code',
+      client_id: client_id,
+      scope: scope,
+      redirect_uri: redirect_uri,
+      state: state
+    }));
 });
 
-app.post('/login', (req, res) => {
-  const code = req.body.code;
-  const spotifyApi = new SpotifyWebApi({
-    redirectUri: process.env.REDIRECT_URI,
-    clientId: process.env.CLIENT_ID,
-    clientSecret: process.env.CLIENT_SECRET,
-  });
+app.get('/callback', function (req, res) {
 
-  spotifyApi
-    .authorizationCodeGrant(code)
-    .then(data => {
+  // your application requests refresh and access tokens
+  // after checking the state parameter
 
-      res.json({
-        accessToken: data.body.access_token,
-        refreshToken: data.body.refresh_token,
-        expiresIn: data.body.expires_in,
-      });
-    })
-    .catch(error => {
-      console.log(error.message);
-      res.sendStatus(400);
+  var code = req.query.code || null;
+  var state = req.query.state || null;
+  // var storedState = req.cookies ? req.cookies[stateKey] : null;
+  console.log('CODE: ', code);
+  console.log('STATE: ', state);
+  // console.log('STORED STATE: ', storedState);
+
+  if (state === null) {
+    res.redirect('/#' +
+      querystring.stringify({
+        error: 'state_mismatch'
+      }));
+  } else {
+    res.clearCookie(stateKey);
+    const config = {
+      method: 'post',
+      baseURL: 'https://accounts.spotify.com/api/token',
+      data: {
+        // grant_type: 'client_credentials',
+        grant_type: 'authorization_code',
+        code: code,
+        redirect_uri: redirect_uri
+      },
+      headers: {
+        'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64')),
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    };
+
+    axios(config).then(result => {
+      console.log('RESULT: ', result);
+      const access_token = result.data.access_token;
+      const refresh_token = result.data.refresh_token;
+      console.log('ACCESS_TOKEN: ', access_token);
+      console.log('REFRESH_TOKEN: ', refresh_token);
+
+      const options = {
+        baseURL: 'https://api.spotify.com/v1/me',
+        headers: { 'Authorization': 'Bearer ' + access_token }
+      };
+
+      // use the access token to access the Spotify Web API
+      axios(options).then(result => {
+        console.log('USE THE ACCESS TOKEN TO ACCESS THE SPOTIFY API: ', result.data);
+
+        // we can also pass the token to the browser to make requests from there
+        // res.redirect('/#' +
+        //   querystring.stringify({
+        //     access_token: access_token,
+        //     refresh_token: refresh_token
+        //   }));
+      }).catch(err => console.error('ERROR FROM /me CALL: ', err));
+    }).catch(err => console.error('ERROR FROM /token CALL: ', err));
+  }
+});
+
+app.get('/refresh_token', function (req, res) {
+
+  // requesting access token from refresh token
+  const refresh_token = req.query.refresh_token;
+
+  const config = {
+    method: 'post',
+    baseURL: 'https://accounts.spotify.com/api/token',
+    headers: {
+      'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64')),
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    data: {
+      grant_type: 'refresh_token',
+      refresh_token: refresh_token
+    }
+  };
+
+  axios(config).then(result => {
+    var access_token = result.data.access_token;
+    console.log('REFRESHED ACCESS_TOKEN: ', access_token);
+
+    res.send({
+      'access_token': access_token
     });
+  }).catch(err => {
+    console.error('ERROR FROM /refresh_token CALL: ', err);
+  });
 });
 
 
-// Search keyword for tracks from user input
-// app.get('/search', Handlers.getKeyword);
-
-// // Search for genre from user input
-// app.get('/search', Handlers.getGenre);
-
-// // Get playlist from Spotify
-// app.get('/playlist', Handlers.getPlaylist);
-
-// // Get saved playlist from database
-// app.get('/playlist', Handlers.getSavedPlaylist);
-
-// // Create playlist
-// app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
-
-// // Delete playlist
-// app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
-
-// // Annotate playlist
-// app.put('/notes', Handlers.updateNote);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
