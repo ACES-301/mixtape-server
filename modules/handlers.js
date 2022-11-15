@@ -2,6 +2,7 @@
 
 const axios = require('axios');
 const Playlist = require('../model/playlist');
+const dummyPlaylist = require('../model/dummyplaylist');
 const Handlers = {};
 
 // Handlers.getKeyword = async (req, res, next) => {
@@ -45,6 +46,17 @@ Handlers.getSavedPlaylist = async (req, res, next) => {
     next(error);
   }
 };
+
+Handlers.searchPlaylist = async (req, res, next) => {
+  try {
+    const searchPlaylists = await Playlist.find({});
+    res.status(200).send(searchPlaylists);
+  } catch(error) {
+    console.error(error);
+    next(error);
+  }
+};
+
 
 Handlers.savePlaylist = async (req, res, next) => {
   try {

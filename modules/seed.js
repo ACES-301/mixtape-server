@@ -14,7 +14,6 @@ db.once('open', function () { console.log('It worked! Mongoose is connected'); }
 
 const Playlist = require('../model/playlist');
 
-
 async function seed() {
   console.log('Seeding database...');
   console.log(Playlist);
@@ -69,6 +68,7 @@ async function seed() {
 }
 
 seed();
+
 
 // async function clear() {
 //   try {

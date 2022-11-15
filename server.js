@@ -36,7 +36,7 @@ db.once('open', function() {
 
 // // Get saved playlist from database
 app.get('/playlist', Handlers.getSavedPlaylist);
-
+app.get('/playlist', Handlers.searchPlaylist);
 // // Create playlist
 // app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
 

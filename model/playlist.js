@@ -11,6 +11,8 @@ const playlistSchema = new Schema ({
   notes: Array,
   body: Object,
   playlist_id: String,
+  keyword: Array,
+  genre: String,
   uri: String
 });
 
