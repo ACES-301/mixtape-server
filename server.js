@@ -144,6 +144,22 @@ app.get('/refresh_token', function (req, res) {
   });
 });
 
+// Get a list of the playlists owned or followed by a Spotify user.
+app.get('/getUserPlaylists/:id', (request, response) => {
+  const config = {
+    method: 'get',
+    baseURL: 'https://api.spotify.com/v1',
+    url: `/users/${request.params.id}/playlists`, // id is user's Spotify ID
+    headers: {
+      'Authorization': 'Bearer ' + request.query.access_token,
+      'Content-Type': 'application/json'
+    }
+  };
+  axios(config).then(result => {
+    console.log('LOOK AT YOUR PLAYLISTS: ', result.data);
+    response.status(200).send(result.data);
+  });
+});
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
