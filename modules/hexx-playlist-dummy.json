@@ -1,0 +1,860 @@
+{
+  "href": "https://api.spotify.com/v1/users/1282455991/playlists?offset=0&limit=20",
+  "items": [
+    {
+      "collaborative": false,
+      "description": "Relax to acoustic versions of your favorite rock songs.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0rCrO4CFRfM"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0rCrO4CFRfM",
+      "id": "37i9dQZF1DX0rCrO4CFRfM",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000351d315abc5bde6a84f9922eb",
+          "width": null
+        }
+      ],
+      "name": "Acoustic Rock",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2Mzg0MTg2MywwMDAwMDAwMDUzMGYyNWY4ZDkwZWMzODgyYmMxODM3MDYyMDU5Njk4",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0rCrO4CFRfM/tracks",
+        "total": 50
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX0rCrO4CFRfM"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/27dY4UT0dXwIn0GJ5qTDxB"
+      },
+      "href": "https://api.spotify.com/v1/playlists/27dY4UT0dXwIn0GJ5qTDxB",
+      "id": "27dY4UT0dXwIn0GJ5qTDxB",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2731f8eb660ea631cd9bf479a5eab67616d0000b27334d228272503a51a4d93a817ab67616d0000b273a5fb379f9c2f390ed5c12b2aab67616d0000b273ee44e3a23aaaa941f7adb48d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2731f8eb660ea631cd9bf479a5eab67616d0000b27334d228272503a51a4d93a817ab67616d0000b273a5fb379f9c2f390ed5c12b2aab67616d0000b273ee44e3a23aaaa941f7adb48d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2731f8eb660ea631cd9bf479a5eab67616d0000b27334d228272503a51a4d93a817ab67616d0000b273a5fb379f9c2f390ed5c12b2aab67616d0000b273ee44e3a23aaaa941f7adb48d",
+          "width": 60
+        }
+      ],
+      "name": "Lemon Taylor ",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjMsZThiODE5ZjY4MDY5MjI2YTRhZGUzNGM3YTU5OTE4OGIyMjg5MTJjZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/27dY4UT0dXwIn0GJ5qTDxB/tracks",
+        "total": 22
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:27dY4UT0dXwIn0GJ5qTDxB"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2Qvl6n4ib7tl469qB6dqMt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2Qvl6n4ib7tl469qB6dqMt",
+      "id": "2Qvl6n4ib7tl469qB6dqMt",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27319170911c1505110bb1a600cab67616d0000b2739b544d8dc977372e5217335bab67616d0000b2739c8dd74225a1fb838fa7dca6ab67616d0000b273adaa2007dffc30492c87bba4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27319170911c1505110bb1a600cab67616d0000b2739b544d8dc977372e5217335bab67616d0000b2739c8dd74225a1fb838fa7dca6ab67616d0000b273adaa2007dffc30492c87bba4",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27319170911c1505110bb1a600cab67616d0000b2739b544d8dc977372e5217335bab67616d0000b2739c8dd74225a1fb838fa7dca6ab67616d0000b273adaa2007dffc30492c87bba4",
+          "width": 60
+        }
+      ],
+      "name": "Skate Songs",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NTUsMjUyYzA5MDhlMzA3YjVmODhjODUyOWFlZWYxMjUzNmE2Y2NhNGExYg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2Qvl6n4ib7tl469qB6dqMt/tracks",
+        "total": 32
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2Qvl6n4ib7tl469qB6dqMt"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4DmbNm5e6HaGLvWpKEvTNB"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4DmbNm5e6HaGLvWpKEvTNB",
+      "id": "4DmbNm5e6HaGLvWpKEvTNB",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273611d8d6e2c89a40a21e534ddab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b43699ae57184992045420a0ab67616d0000b273dc20397b139223620af148f6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273611d8d6e2c89a40a21e534ddab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b43699ae57184992045420a0ab67616d0000b273dc20397b139223620af148f6",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273611d8d6e2c89a40a21e534ddab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b43699ae57184992045420a0ab67616d0000b273dc20397b139223620af148f6",
+          "width": 60
+        }
+      ],
+      "name": "Dance Playlist 👯\u200d♀️",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDgsMTIyMWQ0ZDVjNTYyZjA4NTUwMDZiMGExOTg1N2NkOWIxNGY0YTUwNg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4DmbNm5e6HaGLvWpKEvTNB/tracks",
+        "total": 19
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4DmbNm5e6HaGLvWpKEvTNB"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5j3u1RgzREncZrRm7MET6f"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5j3u1RgzREncZrRm7MET6f",
+      "id": "5j3u1RgzREncZrRm7MET6f",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730c19b3bcdf3823ebe8d980fcab67616d0000b27352e8aa3275f7a3ee9c1e3628ab67616d0000b273dc0c360005537dd7675a187bab67616d0000b273f3cfb404e413a13345da3e5e",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730c19b3bcdf3823ebe8d980fcab67616d0000b27352e8aa3275f7a3ee9c1e3628ab67616d0000b273dc0c360005537dd7675a187bab67616d0000b273f3cfb404e413a13345da3e5e",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730c19b3bcdf3823ebe8d980fcab67616d0000b27352e8aa3275f7a3ee9c1e3628ab67616d0000b273dc0c360005537dd7675a187bab67616d0000b273f3cfb404e413a13345da3e5e",
+          "width": 60
+        }
+      ],
+      "name": "Happy Pride",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OTMsZTc4YjU4NTM5OWY5ZDUwMzRhY2U3NTM4YmY1YmZlNjg0ZDhjMzUzZg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5j3u1RgzREncZrRm7MET6f/tracks",
+        "total": 78
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5j3u1RgzREncZrRm7MET6f"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2OhZAN0BXwZYPREgaVVm6k"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2OhZAN0BXwZYPREgaVVm6k",
+      "id": "2OhZAN0BXwZYPREgaVVm6k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2736081278cb62df2757d55633bab67616d0000b27381cfaf3b1359f7b579ea05e5ab67616d0000b273d3004c7f9c57d391bbdb0850ab67616d0000b273e9e5f88b2786f174d465f0ea",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2736081278cb62df2757d55633bab67616d0000b27381cfaf3b1359f7b579ea05e5ab67616d0000b273d3004c7f9c57d391bbdb0850ab67616d0000b273e9e5f88b2786f174d465f0ea",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2736081278cb62df2757d55633bab67616d0000b27381cfaf3b1359f7b579ea05e5ab67616d0000b273d3004c7f9c57d391bbdb0850ab67616d0000b273e9e5f88b2786f174d465f0ea",
+          "width": 60
+        }
+      ],
+      "name": "Rage",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjUsODVmMGZjYWJjOTNmMDU4YThlZDY0MmVhNDA4OWU5NDczZWU3NzcyOA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2OhZAN0BXwZYPREgaVVm6k/tracks",
+        "total": 23
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2OhZAN0BXwZYPREgaVVm6k"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7KxpNGzqnlzXdQxrgF7aBV"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7KxpNGzqnlzXdQxrgF7aBV",
+      "id": "7KxpNGzqnlzXdQxrgF7aBV",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730daa4995b2937eba64855ed5ab67616d0000b273457db8bc43abd9356f25e601ab67616d0000b273bd322b18e672fb5bfe022b6fab67616d0000b273ef35c38cc9a9c5a5ca3281ac",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730daa4995b2937eba64855ed5ab67616d0000b273457db8bc43abd9356f25e601ab67616d0000b273bd322b18e672fb5bfe022b6fab67616d0000b273ef35c38cc9a9c5a5ca3281ac",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730daa4995b2937eba64855ed5ab67616d0000b273457db8bc43abd9356f25e601ab67616d0000b273bd322b18e672fb5bfe022b6fab67616d0000b273ef35c38cc9a9c5a5ca3281ac",
+          "width": 60
+        }
+      ],
+      "name": "Brain Power",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzQsMWQ5Y2RiMThmNzhiZGQ2MWZmM2I3YzRkMTQ5YzAyOWU1ZDc2MWJmYg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7KxpNGzqnlzXdQxrgF7aBV/tracks",
+        "total": 33
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7KxpNGzqnlzXdQxrgF7aBV"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/34vH5APadvRMJkb67SXul1"
+      },
+      "href": "https://api.spotify.com/v1/playlists/34vH5APadvRMJkb67SXul1",
+      "id": "34vH5APadvRMJkb67SXul1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730672b0f8756ae2af86e8a5ceab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b298538481c52f7e217ed000ab67616d0000b273d69b2dbef9fd3c439e591d1b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730672b0f8756ae2af86e8a5ceab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b298538481c52f7e217ed000ab67616d0000b273d69b2dbef9fd3c439e591d1b",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730672b0f8756ae2af86e8a5ceab67616d0000b273ae73fc5866e9fb7d1dc80519ab67616d0000b273b298538481c52f7e217ed000ab67616d0000b273d69b2dbef9fd3c439e591d1b",
+          "width": 60
+        }
+      ],
+      "name": "❣️Love Letters🔥",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTA1LDZiZmJiMTA0MGM3YzAyY2E3OGNmMDA2NzJiMTZjZDY2ZDY2OTNjNmE=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/34vH5APadvRMJkb67SXul1/tracks",
+        "total": 101
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:34vH5APadvRMJkb67SXul1"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4Vd29RMRbQ17HYITtlEkuc"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4Vd29RMRbQ17HYITtlEkuc",
+      "id": "4Vd29RMRbQ17HYITtlEkuc",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2739cd0a4328101c8a169b661f5ab67616d0000b273cb610f9d9d31287af389de3bab67616d0000b273e252757ee11b003c2dbce022ab67616d0000b273ee306bc69ad7935bce38d94f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2739cd0a4328101c8a169b661f5ab67616d0000b273cb610f9d9d31287af389de3bab67616d0000b273e252757ee11b003c2dbce022ab67616d0000b273ee306bc69ad7935bce38d94f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2739cd0a4328101c8a169b661f5ab67616d0000b273cb610f9d9d31287af389de3bab67616d0000b273e252757ee11b003c2dbce022ab67616d0000b273ee306bc69ad7935bce38d94f",
+          "width": 60
+        }
+      ],
+      "name": "Dulce Vida",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzEsM2I5MTQzMWExZDViNWI4ZTU1NTczMDZiY2JkYWQ0YTU0ODI4NWFkZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4Vd29RMRbQ17HYITtlEkuc/tracks",
+        "total": 28
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4Vd29RMRbQ17HYITtlEkuc"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0rst8pDrV7wTC7iZg01G2j"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0rst8pDrV7wTC7iZg01G2j",
+      "id": "0rst8pDrV7wTC7iZg01G2j",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2733d6fa293f49903ed38fbe0deab67616d0000b27385cf7ee5be91ea40c05531dfab67616d0000b273a0caffda54afd0a65995bbabab67616d0000b273a56e99e83f32f654004e8d2a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2733d6fa293f49903ed38fbe0deab67616d0000b27385cf7ee5be91ea40c05531dfab67616d0000b273a0caffda54afd0a65995bbabab67616d0000b273a56e99e83f32f654004e8d2a",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2733d6fa293f49903ed38fbe0deab67616d0000b27385cf7ee5be91ea40c05531dfab67616d0000b273a0caffda54afd0a65995bbabab67616d0000b273a56e99e83f32f654004e8d2a",
+          "width": 60
+        }
+      ],
+      "name": "👑 Bad Girls Do It Well ☠️",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMyLGM3M2JlZDNhMzMyZDNmMjhkM2MzNDkzOGMwZDYyYWY4NGVlNmI5MWU=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0rst8pDrV7wTC7iZg01G2j/tracks",
+        "total": 106
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0rst8pDrV7wTC7iZg01G2j"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/5KhRO1n3VGzzdL70jx0Klx"
+      },
+      "href": "https://api.spotify.com/v1/playlists/5KhRO1n3VGzzdL70jx0Klx",
+      "id": "5KhRO1n3VGzzdL70jx0Klx",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2737d01393d71b8025b4b8c2514ab67616d0000b27384cdc8828201b7f6a1e38b73ab67616d0000b273cf0903a1974c1b080fe404b5ab67616d0000b273fa94e7d8d2480cc906ba4441",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2737d01393d71b8025b4b8c2514ab67616d0000b27384cdc8828201b7f6a1e38b73ab67616d0000b273cf0903a1974c1b080fe404b5ab67616d0000b273fa94e7d8d2480cc906ba4441",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2737d01393d71b8025b4b8c2514ab67616d0000b27384cdc8828201b7f6a1e38b73ab67616d0000b273cf0903a1974c1b080fe404b5ab67616d0000b273fa94e7d8d2480cc906ba4441",
+          "width": 60
+        }
+      ],
+      "name": "Songs for When Your Girlfriend Drives You Crazy",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "OSwzYTYzY2MzOTRhOGFhOTUzY2IxZGEyNDMwNGNkMWY5M2FlNzI2YjRl",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/5KhRO1n3VGzzdL70jx0Klx/tracks",
+        "total": 7
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:5KhRO1n3VGzzdL70jx0Klx"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4ZTEnQcM3IHhlZKo2sARoH"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4ZTEnQcM3IHhlZKo2sARoH",
+      "id": "4ZTEnQcM3IHhlZKo2sARoH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2732027a107260c4e284e786975ab67616d0000b2732cc11a5fd0c6442611627956ab67616d0000b27347cc5d86f3528b233f2b78ffab67616d0000b273d998be7d86a81adf81e447f0",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2732027a107260c4e284e786975ab67616d0000b2732cc11a5fd0c6442611627956ab67616d0000b27347cc5d86f3528b233f2b78ffab67616d0000b273d998be7d86a81adf81e447f0",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2732027a107260c4e284e786975ab67616d0000b2732cc11a5fd0c6442611627956ab67616d0000b27347cc5d86f3528b233f2b78ffab67616d0000b273d998be7d86a81adf81e447f0",
+          "width": 60
+        }
+      ],
+      "name": "Dec25",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjcsNWM0YTViNmIwNmZjMzVhZDdlMGExYzMzOGJiMzAxMGYzYWNkOWRjMg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4ZTEnQcM3IHhlZKo2sARoH/tracks",
+        "total": 25
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4ZTEnQcM3IHhlZKo2sARoH"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3W5r6UtWIJPh1xGHJgYQBs"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3W5r6UtWIJPh1xGHJgYQBs",
+      "id": "3W5r6UtWIJPh1xGHJgYQBs",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2730a8881b0d247346c3c447bf3ab67616d0000b2733cf1c1dbcfa3f1ab7282719bab67616d0000b2735675e83f707f1d7271e5cf8aab67616d0000b273de03bfc2991fd5bcfde65ba3",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2730a8881b0d247346c3c447bf3ab67616d0000b2733cf1c1dbcfa3f1ab7282719bab67616d0000b2735675e83f707f1d7271e5cf8aab67616d0000b273de03bfc2991fd5bcfde65ba3",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2730a8881b0d247346c3c447bf3ab67616d0000b2733cf1c1dbcfa3f1ab7282719bab67616d0000b2735675e83f707f1d7271e5cf8aab67616d0000b273de03bfc2991fd5bcfde65ba3",
+          "width": 60
+        }
+      ],
+      "name": "💀 Punk Ass Bitch",
+      "owner": {
+        "display_name": "Hexx King",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/1282455991"
+        },
+        "href": "https://api.spotify.com/v1/users/1282455991",
+        "id": "1282455991",
+        "type": "user",
+        "uri": "spotify:user:1282455991"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzA3LDY1Mjg3OWI5ZTlmZTIxOWUwODdkMzFhYTllMDU5MWRiM2I4ZDFmNDY=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3W5r6UtWIJPh1xGHJgYQBs/tracks",
+        "total": 298
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3W5r6UtWIJPh1xGHJgYQBs"
+    },
+    {
+      "collaborative": false,
+      "description": "All the emo songs you listened to when you were a teenage dirtbag, including Teenage Dirtbag.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6Bmn4a965FPEYTp4CgCulU"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6Bmn4a965FPEYTp4CgCulU",
+      "id": "6Bmn4a965FPEYTp4CgCulU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2733acad60fe6e2daf27e6b0034ab67616d0000b27371565eda831124be86c603d5ab67616d0000b273e18903506fa505b5dd63d58eab67616d0000b273f12c61574ec7c15d9b3d5c4b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2733acad60fe6e2daf27e6b0034ab67616d0000b27371565eda831124be86c603d5ab67616d0000b273e18903506fa505b5dd63d58eab67616d0000b273f12c61574ec7c15d9b3d5c4b",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2733acad60fe6e2daf27e6b0034ab67616d0000b27371565eda831124be86c603d5ab67616d0000b273e18903506fa505b5dd63d58eab67616d0000b273f12c61574ec7c15d9b3d5c4b",
+          "width": 60
+        }
+      ],
+      "name": "Teenage Dirtbag",
+      "owner": {
+        "display_name": "Mel",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/melllllyy"
+        },
+        "href": "https://api.spotify.com/v1/users/melllllyy",
+        "id": "melllllyy",
+        "type": "user",
+        "uri": "spotify:user:melllllyy"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzE1LGJlZjZiODVmMmNiMzg0ZGM3NDI1NTA5MmYwNjhhZWY1M2EwMzgyZjM=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6Bmn4a965FPEYTp4CgCulU/tracks",
+        "total": 271
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6Bmn4a965FPEYTp4CgCulU"
+    },
+    {
+      "collaborative": false,
+      "description": "Relax and indulge with beautiful piano pieces",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO",
+      "id": "37i9dQZF1DX4sWSpwq3LiO",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000003ca5a7517156021292e5663a6",
+          "width": null
+        }
+      ],
+      "name": "Peaceful Piano",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2ODAxMjMwMSwwMDAwMDAwMDUwODJjNzk5MDE4ZTdhZTU5YmRkNTVlNDZlNDI5YzFk",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX4sWSpwq3LiO/tracks",
+        "total": 297
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO"
+    },
+    {
+      "collaborative": false,
+      "description": "Me and bae = love",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1aA8os1ylFZ"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1aA8os1ylFZ",
+      "id": "37i9dQZF1DX1aA8os1ylFZ",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000300f9c5e3f0765886ff0db9bc",
+          "width": null
+        }
+      ],
+      "name": "BAE",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2NjkwODAwMSwwMDAwMDAwMDFjNTRhNDlmM2NmMjU0ZTU5ZjNkY2IzMzVjYTI3ZWMx",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1aA8os1ylFZ/tracks",
+        "total": 104
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX1aA8os1ylFZ"
+    },
+    {
+      "collaborative": false,
+      "description": "hemlocke springs tops our list of artists to watch.",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWY0DyDKedRYY"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY0DyDKedRYY",
+      "id": "37i9dQZF1DWY0DyDKedRYY",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f0000000395176577460569e691fd3d83",
+          "width": null
+        }
+      ],
+      "name": "RADAR US",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2ODQ0Nzk3NSwwMDAwMDAwMGYyMzBlZmUxNGE4MWY2MDljYjEwOTkwMjFiNDRlMThi",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWY0DyDKedRYY/tracks",
+        "total": 52
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DWY0DyDKedRYY"
+    },
+    {
+      "collaborative": false,
+      "description": "If it's buzzing, it's here. The hottest new songs of the week. Cover: Galantis, David Guetta & MNEK",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8f6LHxMjnzD"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8f6LHxMjnzD",
+      "id": "37i9dQZF1DX8f6LHxMjnzD",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f00000003f043ff5d1854da6b182325b4",
+          "width": null
+        }
+      ],
+      "name": "Singled Out",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2ODQ2NjgwMSwwMDAwMDAwMDU5NGI3NTBhNmE0NDc1YzJhNjU1ZDhjZDg0NTQ2YmVh",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8f6LHxMjnzD/tracks",
+        "total": 30
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX8f6LHxMjnzD"
+    },
+    {
+      "collaborative": false,
+      "description": "A collection of powerful voices and alluring siren songs. ",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0IyMQV27EGn"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0IyMQV27EGn",
+      "id": "37i9dQZF1DX0IyMQV27EGn",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f000000031ea05b83a7acfcc4a86d6b09",
+          "width": null
+        }
+      ],
+      "name": "Femme Fatale",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2MTQ4NjQwMSwwMDAwMDAwMGM3Y2JiZTU3ZjczNjhkODU2NmIxYWM5NTU4NTE5MmI2",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0IyMQV27EGn/tracks",
+        "total": 70
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DX0IyMQV27EGn"
+    },
+    {
+      "collaborative": false,
+      "description": "Set the mood just right...",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbEm2sKzgoJ8"
+      },
+      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbEm2sKzgoJ8",
+      "id": "37i9dQZF1DXbEm2sKzgoJ8",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706f000000032cc039bc17e7ead3208cef3f",
+          "width": null
+        }
+      ],
+      "name": "Make Out Jams",
+      "owner": {
+        "display_name": "Spotify",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/spotify"
+        },
+        "href": "https://api.spotify.com/v1/users/spotify",
+        "id": "spotify",
+        "type": "user",
+        "uri": "spotify:user:spotify"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTY2ODE4NjA3NiwwMDAwMDAwMDRlYjY1YjAyZjRkYTJkZmMxZTRjZGRmYTlmYmZmNmMw",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXbEm2sKzgoJ8/tracks",
+        "total": 100
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:37i9dQZF1DXbEm2sKzgoJ8"
+    }
+  ],
+  "limit": 20,
+  "next": "https://api.spotify.com/v1/users/1282455991/playlists?offset=20&limit=20",
+  "offset": 0,
+  "previous": null,
+  "total": 62
+}
