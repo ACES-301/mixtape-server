@@ -46,15 +46,15 @@ Handlers.getSavedPlaylist = async (req, res, next) => {
   }
 };
 
-Handlers.searchPlaylist = async (req, res, next) => {
-  try {
-    const searchPlaylists = await dummyPlaylist.find({});
-    res.status(200).send(searchPlaylists);
-  } catch(error) {
-    console.error(error);
-    next(error);
-  }
-};
+// Handlers.searchPlaylist = async (req, res, next) => {
+//   try {
+//     const searchPlaylists = await dummyPlaylist.find({});
+//     res.status(200).send(searchPlaylists);
+//   } catch(error) {
+//     console.error(error);
+//     next(error);
+//   }
+// };
 
 
 Handlers.savePlaylist = async (req, res, next) => {

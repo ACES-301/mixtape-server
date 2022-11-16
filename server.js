@@ -1,5 +1,5 @@
 'use strict';
-
+const dummyAPI = require('./modules/hexx-playlist-dummy.json');
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
@@ -8,22 +8,20 @@ const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 const redirect_uri = process.env.REDIRECT_URI;
 //querystring library is deprecated
-const querystring = require('query-string');
-var cookieParser = require('cookie-parser');
+// const querystring = require('query-string');
+// var cookieParser = require('cookie-parser');
 
 const app = express();
 app.use(cors());
 app.use(express.json()); // has server update with json data
-app.use(express.static(__dirname + '/public'))
-  .use(cors())
-  .use(cookieParser());
-  
+// app.use(express.static(__dirname + '/public'))
+//   .use(cors())
+//   .use(cookieParser());
+
 const mongoose = require('mongoose');
 const Handlers = require('./modules/handlers');
 // const verifyUser = require('./auth.js');
 
-const app = express();
-app.use(cors());
 // app.use(verifyUser);
 
 app.use(express.json()); // has server update with json data
@@ -32,50 +30,50 @@ app.use(express.json()); // has server update with json data
 const PORT = process.env.PORT || 3002;
 const stateKey = 'spotify_auth_state';
 
-/**
- * Generates a random string containing numbers and letters
- * @param  {number} length The length of the string
- * @return {string} The generated string
- */
-var generateRandomString = function (length) {
-  var text = '';
-  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// /**
+//  * Generates a random string containing numbers and letters
+//  * @param  {number} length The length of the string
+//  * @return {string} The generated string
+//  */
+// var generateRandomString = function (length) {
+//   var text = '';
+//   var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-  for (var i = 0; i < length; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  return text;
-};
+//   for (var i = 0; i < length; i++) {
+//     text += possible.charAt(Math.floor(Math.random() * possible.length));
+//   }
+//   return text;
+// };
 
-app.get('/login', function (req, res) {
+// app.get('/login', function (req, res) {
 
-  var state = generateRandomString(16);
-  res.cookie(stateKey, state);
+//   var state = generateRandomString(16);
+//   res.cookie(stateKey, state);
 
-  // your application requests authorization
-  var scope = 'user-read-private user-read-email';
-  const url = 'https://accounts.spotify.com/authorize?' +
-    querystring.stringify({
-      response_type: 'code',
-      client_id: client_id,
-      scope: scope,
-      redirect_uri: redirect_uri,
-      state: state
-    });
-  console.log('REDIRET URL: ', typeof url);
-  res.status(301).redirect(url);
+//   // your application requests authorization
+//   var scope = 'user-read-private user-read-email';
+//   const url = 'https://accounts.spotify.com/authorize?' +
+//     querystring.stringify({
+//       response_type: 'code',
+//       client_id: client_id,
+//       scope: scope,
+//       redirect_uri: redirect_uri,
+//       state: state
+//     });
+//   console.log('REDIRET URL: ', typeof url);
+//   res.status(301).redirect(url);
 
-  // const clickMe = 'https://accounts.spotify.com/authorize?' +
-  //   querystring.stringify({
-  //     response_type: 'code',
-  //     client_id: client_id,
-  //     scope: scope,
-  //     redirect_uri: redirect_uri,
-  //     state: state
-  //   });
-  // console.log('CLICKME VARAIBLE: ', clickMe);
-  // res.status(200).send(clickMe);
-});
+// const clickMe = 'https://accounts.spotify.com/authorize?' +
+//   querystring.stringify({
+//     response_type: 'code',
+//     client_id: client_id,
+//     scope: scope,
+//     redirect_uri: redirect_uri,
+//     state: state
+//   });
+// console.log('CLICKME VARAIBLE: ', clickMe);
+// res.status(200).send(clickMe);
+// });
 
 app.get('/callback', function (req, res) {
 
@@ -235,7 +233,41 @@ db.once('open', function() {
 
 // // Get saved playlist from database
 app.get('/playlist', Handlers.getSavedPlaylist);
-app.get('/playlist', Handlers.searchPlaylist);
+
+app.get('/search', (req, res, next) => {
+  try {
+    // grab the searchQuery from the request object
+    // notice that the query parameter is named "type"
+    // "type" is the name of query parameter we must send along with Axios from React in order to ask for data from our server
+    const { keyword, genre } = req.query;
+    console.log('query parameter: ', req.query);
+    console.log('keyword: ', keyword);
+    console.log('genre: ', genre);
+
+    const getNewPlaylist = new NewPlaylist(keyword, genre);
+    const playlistItems = getNewPlaylist.getItems();
+    res.status(200).send(playlistItems);
+  } catch(error) {
+    // next can be used to pass an error to express for the error middleware to handle
+    next(error);
+  }
+});
+
+class NewPlaylist {
+  constructor(keyword, genre){
+    // find method to find the type of list we want to return
+    let items = dummyAPI.items.filter(item => item.name.includes(keyword) || item.description.includes(keyword) || item.genre === genre);
+    //  || item.description.includes(keyword)) || item.genre === genre) || ((item.name.includes(keyword) || item.description.includes(keyword)) && item.genre === genre));
+    console.log(items);
+    this.items = items;
+  }
+
+  getItems() {
+    return this.items.map(item => ({
+      uri: item.uri,
+    }));
+  }
+}
 // // Create playlist
 // app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
 

@@ -17,6 +17,7 @@
         }
       ],
       "name": "Acoustic Rock",
+      "genre": "Rock",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
@@ -155,6 +156,7 @@
         }
       ],
       "name": "Dance Playlist 👯\u200d♀️",
+      "genre": "Dance",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -201,6 +203,7 @@
         }
       ],
       "name": "Happy Pride",
+      "genre": "Pop",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -247,6 +250,7 @@
         }
       ],
       "name": "Rage",
+      "genre":"Alternative",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -293,6 +297,7 @@
         }
       ],
       "name": "Brain Power",
+      "genre": "Classical",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -339,6 +344,7 @@
         }
       ],
       "name": "❣️Love Letters🔥",
+      "genre": "Indie",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -431,6 +437,7 @@
         }
       ],
       "name": "👑 Bad Girls Do It Well ☠️",
+      "genre": "Rap",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -477,6 +484,7 @@
         }
       ],
       "name": "Songs for When Your Girlfriend Drives You Crazy",
+      "genre": "Alternative",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -523,6 +531,7 @@
         }
       ],
       "name": "Dec25",
+      "genre": "Pop",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -615,6 +624,7 @@
         }
       ],
       "name": "Teenage Dirtbag",
+      "genre": "Alternative",
       "owner": {
         "display_name": "Mel",
         "external_urls": {
@@ -651,6 +661,7 @@
         }
       ],
       "name": "Peaceful Piano",
+      "genre": "Classical",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
@@ -687,6 +698,7 @@
         }
       ],
       "name": "BAE",
+      "genre": "Pop",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
@@ -723,6 +735,7 @@
         }
       ],
       "name": "RADAR US",
+      "genre": "Dance",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
@@ -759,6 +772,7 @@
         }
       ],
       "name": "Singled Out",
+      "genre": "Pop",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
@@ -795,6 +809,7 @@
         }
       ],
       "name": "Femme Fatale",
+      "genre": "Pop",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {
