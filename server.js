@@ -43,14 +43,27 @@ app.get('/login', function (req, res) {
 
   // your application requests authorization
   var scope = 'user-read-private user-read-email';
-  res.redirect('https://accounts.spotify.com/authorize?' +
+  const url = 'https://accounts.spotify.com/authorize?' +
     querystring.stringify({
       response_type: 'code',
       client_id: client_id,
       scope: scope,
       redirect_uri: redirect_uri,
       state: state
-    }));
+    });
+  console.log('REDIRET URL: ', typeof url);
+  res.status(301).redirect(url);
+
+  // const clickMe = 'https://accounts.spotify.com/authorize?' +
+  //   querystring.stringify({
+  //     response_type: 'code',
+  //     client_id: client_id,
+  //     scope: scope,
+  //     redirect_uri: redirect_uri,
+  //     state: state
+  //   });
+  // console.log('CLICKME VARAIBLE: ', clickMe);
+  // res.status(200).send(clickMe);
 });
 
 app.get('/callback', function (req, res) {
@@ -88,12 +101,27 @@ app.get('/callback', function (req, res) {
     };
 
     axios(config).then(result => {
+
+      class SpotifyUser {
+        constructor(data) {
+          this.access_token = data.access_token;
+          this.refresh_token = data.refresh_token;
+          // this.display_name = user.display_name;
+          // this.email = user.email;
+          // this.profileURL = user.external_urls.spotify;
+          // this.userID = user.id;
+          // this.profilePicture = user.images.url;
+          // this.uri = user.uri;
+        }
+      }
+
       console.log('RESULT: ', result);
       const access_token = result.data.access_token;
       const refresh_token = result.data.refresh_token;
       console.log('ACCESS_TOKEN: ', access_token);
       console.log('REFRESH_TOKEN: ', refresh_token);
       // TODO: I wish to run the the result.data through a class to construct a new response obj that will include the user's spotify profile and the access_token and refresh_token.
+      const SpotifyUserInstance = new SpotifyUser(result.data);
       // That instance will then be sent to the frontend to be saved to state.
 
       const options = {
@@ -105,8 +133,15 @@ app.get('/callback', function (req, res) {
       axios(options).then(result => {
         console.log('USE THE ACCESS TOKEN TO ACCESS THE SPOTIFY API: ', result.data);
         // TODO: I wish to send the new instance of the constructed response obj that includes the user's spotify profile and the access_token and refresh_token.
+        SpotifyUserInstance.display_name = result.data.display_name;
+        SpotifyUserInstance.email = result.data.email;
+        SpotifyUserInstance.profileURL = result.data.external_urls.spotify;
+        SpotifyUserInstance.userID = result.data.id;
+        SpotifyUserInstance.profile_picture = result.data.images[0].url;
+        SpotifyUserInstance.uri = result.data.uri;
         // currently blocked by status code 303.
-        res.status(200).send(result.data);
+        console.log('SPOTIFY USER CLASS INSTANCE: ', SpotifyUserInstance);
+        res.status(200).send(SpotifyUserInstance);
 
         // we can also pass the token to the browser to make requests from there
         // we probably don't want to redirect from the backend. A res.send works.
