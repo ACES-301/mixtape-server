@@ -17,6 +17,17 @@ app.use(express.json()); // has server update with json data
 app.use(express.static(__dirname + '/public'))
   .use(cors())
   .use(cookieParser());
+  
+const mongoose = require('mongoose');
+const Handlers = require('./modules/handlers');
+// const verifyUser = require('./auth.js');
+
+const app = express();
+app.use(cors());
+// app.use(verifyUser);
+
+app.use(express.json()); // has server update with json data
+
 
 const PORT = process.env.PORT || 3002;
 const stateKey = 'spotify_auth_state';
@@ -201,6 +212,44 @@ app.get('/getUserPlaylists/:id', (request, response) => {
     response.status(200).send(result.data);
   });
 });
+
+mongoose.connect(process.env.MONGO_DATABASE, {useNewUrlParser: true, useUnifiedTopology: true});
+
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('Mongoose is connected');
+});
+
+// app.get('/', (req, res) => res.send('test request received'));
+
+// // Search keyword for tracks from user input
+// app.get('/search', Handlers.getKeyword);
+
+// // Search for genre from user input
+// app.get('/search', Handlers.getGenre);
+
+// // Get playlist from Spotify
+// app.get('/playlist/{playlist_id}', Handlers.getPlaylist);
+
+// // Get saved playlist from database
+app.get('/playlist', Handlers.getSavedPlaylist);
+app.get('/playlist', Handlers.searchPlaylist);
+// // Create playlist
+// app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
+
+// Save playlist to MongoDB
+app.post('/playlist', Handlers.savePlaylist);
+
+
+// // Delete playlist
+// app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
+
+app.delete('/playlist/:id', Handlers.deleteSavedPlaylist);
+
+// // Annotate playlist
+app.put('/playlists/:id', Handlers.updateNote);
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));

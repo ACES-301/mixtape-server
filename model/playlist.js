@@ -10,7 +10,10 @@ const playlistSchema = new Schema ({
   name: String,
   notes: Array,
   body: Object,
-  playlist_id: String
+  playlist_id: String,
+  keyword: Array,
+  genre: String,
+  uri: String
 });
 
 
