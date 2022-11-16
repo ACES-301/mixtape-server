@@ -51,8 +51,10 @@ app.get('/login', function (req, res) {
       redirect_uri: redirect_uri,
       state: state
     });
-  console.log('REDIRET URL: ', typeof url);
-  res.status(301).redirect(url);
+  console.log('REDIRET URL TYPE: ', url);
+  // axios.get(url)
+  res.status(200).send(url);
+  // res.status(302).redirect(url);
 
   // const clickMe = 'https://accounts.spotify.com/authorize?' +
   //   querystring.stringify({
@@ -65,6 +67,13 @@ app.get('/login', function (req, res) {
   // console.log('CLICKME VARAIBLE: ', clickMe);
   // res.status(200).send(clickMe);
 });
+
+// app.get('/authMe', (req, res) => {
+//   console.log('REDIRET URL: ', req.query.url);
+//   const results = axios.get(req.query.url);
+//   console.log('THESE ARE THE AUTHORIZATION AXIOS RESULTS: ', results.data);
+//   res.status(200).send(results.data);
+// });
 
 app.get('/callback', function (req, res) {
 
@@ -106,6 +115,7 @@ app.get('/callback', function (req, res) {
         constructor(data) {
           this.access_token = data.access_token;
           this.refresh_token = data.refresh_token;
+          this.expires_in = data.expires_in;
           // this.display_name = user.display_name;
           // this.email = user.email;
           // this.profileURL = user.external_urls.spotify;
@@ -141,8 +151,9 @@ app.get('/callback', function (req, res) {
         SpotifyUserInstance.uri = result.data.uri;
         // currently blocked by status code 303.
         console.log('SPOTIFY USER CLASS INSTANCE: ', SpotifyUserInstance);
+        // res.status(200).send('MAIL TIME!');
         res.status(200).send(SpotifyUserInstance);
-
+        
         // we can also pass the token to the browser to make requests from there
         // we probably don't want to redirect from the backend. A res.send works.
         // res.redirect('/#' +
