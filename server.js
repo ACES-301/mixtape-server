@@ -16,6 +16,8 @@ app.use(express.json()); // has server update with json data
 const PORT = process.env.PORT || 3002;
 
 mongoose.connect(process.env.MONGO_DATABASE, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGO_DATABASE, {useNewUrlParser: true, useUnifiedTopology: true});
+
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -28,7 +30,7 @@ db.once('open', function() {
 // // Search keyword for tracks from user input
 // app.get('/search', Handlers.getKeyword);
 
-// // Search for genre from user input 
+// // Search for genre from user input
 // app.get('/search', Handlers.getGenre);
 
 // // Get playlist from Spotify
@@ -47,7 +49,9 @@ app.post('/playlist', Handlers.savePlaylist);
 // // Delete playlist
 // app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
 
+app.delete('/playlist/:id', Handlers.deleteSavedPlaylist);
+
 // // Annotate playlist
-// app.put('/notes', Handlers.updateNote);
+app.put('/playlists/:id', Handlers.updateNote);
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));

@@ -64,6 +64,25 @@ async function seed() {
     playlist_id: '12345',
     uri: 'spotify:album:1TIUsv8qmYLpBEhvmBmyBk'
   });
+
+  await Playlist.create({
+    keyword: ['happy' , 'party', 'fun'],
+    genre: 'pop',
+    uri: 'spotify:album:1TIUsv8qmYLpBEhvmBmyBk'
+  });
+
+  await Playlist.create({
+    keyword: ['sad' , 'chill', 'idk'],
+    genre: 'rock',
+    uri: 'spotify:album:27ftYHLeunzcSzb33Wk1h'
+  });
+
+  await Playlist.create({
+    keyword: ['dance' , 'rock-out', 'idk'],
+    genre: 'rock',
+    uri: 'spotify:album:27ftYHLeunzcSzb33Wk1hf'
+  });
+
   mongoose.disconnect();
 }
 
