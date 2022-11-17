@@ -46,8 +46,12 @@ app.get('/search', (req, res, next) => {
 class NewPlaylist {
   constructor(keyword, genre){
     // find method to find the type of list we want to return
-    let items = dummyAPI.items.filter(item => item.name.includes(keyword) || item.description.includes(keyword) || item.genre === genre);
-    //  || item.description.includes(keyword)) || item.genre === genre) || ((item.name.includes(keyword) || item.description.includes(keyword)) && item.genre === genre));
+    let items;
+    if (genre === undefined){
+      items = dummyAPI.items.filter(item => item.name.includes(keyword) || item.description.includes(keyword));
+    } else {
+      items = dummyAPI.items.filter(item => item.genre === genre);
+    }
     console.log(items);
     this.items = items;
   }
@@ -58,16 +62,12 @@ class NewPlaylist {
     }));
   }
 }
-// // Create playlist
-// app.post('/users/{user_id}/playlists', Handlers.createPlaylist);
 
 // Save playlist to MongoDB
 app.post('/playlist', Handlers.savePlaylist);
 
 
 // // Delete playlist
-// app.delete('/playlist/{playlist_id}/tracks', Handlers.deletePlaylist);
-
 app.delete('/playlist/:id', Handlers.deleteSavedPlaylist);
 
 // // Annotate playlist
