@@ -47,10 +47,12 @@ class NewPlaylist {
   constructor(keyword, genre){
     // find method to find the type of list we want to return
     let items;
-    if (genre === undefined){
+    if (genre === 'none'){
       items = dummyAPI.items.filter(item => item.name.includes(keyword) || item.description.includes(keyword));
-    } else {
+    } else if (!keyword){
       items = dummyAPI.items.filter(item => item.genre === genre);
+    } else {
+      items = dummyAPI.items.filter(item => (item.name.includes(keyword) || item.description.includes(keyword)) && item.genre === genre);
     }
     console.log(items);
     this.items = items;
