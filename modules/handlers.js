@@ -1,40 +1,7 @@
 'use strict';
 
-// const Playlist = require('../model/playlist');
 const dummyPlaylist = require('../model/dummyplaylist');
 const Handlers = {};
-
-// Handlers.getKeyword = async (req, res, next) => {
-//   const { searchQuery } = req.searchQuery.searchQuery;
-//   const url = `https://api.spotify.com/v1/search?q=${searchQuery}&type=track&limit=6&market=ES`;
-//   axios
-//     .get(url)
-//     .then(playlist => {
-//       console.log(playlist.data);
-//       const tracksArray = playlist.data.items.map(tracks => new Playlist(tracks));
-//       res.status(200).send(tracksArray);
-//     })
-//     .catch(error => {
-//       console.error(error);
-//       next(error);
-//     });
-// };
-
-// Handlers.getGenre = async (req, res, next) => {
-//   const { searchGenre } = req.query.searchGenre;
-//   const url = `https://api.spotify.com/v1/search?genre=${searchGenre}&type=track&limit=6&market=ES`;
-//   axios
-//     .get(url)
-//     .then(playlist => {
-//       console.log(playlist.data);
-//       const tracksArray = playlist.data.items.map(tracks => new Playlist(tracks));
-//       res.status(200).send(tracksArray);
-//     })
-//     .catch(error => {
-//       console.error(error);
-//       next(error);
-//     });
-// };
 
 Handlers.getSavedPlaylist = async (req, res, next) => {
   try {
@@ -45,17 +12,6 @@ Handlers.getSavedPlaylist = async (req, res, next) => {
     next(error);
   }
 };
-
-// Handlers.searchPlaylist = async (req, res, next) => {
-//   try {
-//     const searchPlaylists = await dummyPlaylist.find({});
-//     res.status(200).send(searchPlaylists);
-//   } catch(error) {
-//     console.error(error);
-//     next(error);
-//   }
-// };
-
 
 Handlers.savePlaylist = async (req, res, next) => {
   try {
@@ -68,7 +24,6 @@ Handlers.savePlaylist = async (req, res, next) => {
     next(error);
   }
 };
-
 
 Handlers.deleteSavedPlaylist = async (request, response, next) => {
   const { id } = request.params;
@@ -101,11 +56,5 @@ Handlers.updateNote = async (request, response, next) => {
     next(error);
   }
 };
-
-// class Playlist {
-//   constructor(tracks) {
-//     this.items = tracks.
-//   }
-// }
 
 module.exports = Handlers;

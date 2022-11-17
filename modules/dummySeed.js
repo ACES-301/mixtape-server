@@ -87,15 +87,3 @@ async function dummySeed() {
 }
 
 dummySeed();
-
-
-// async function clear() {
-//   try {
-//     await Book.deleteMany({});
-//     console.log('Books cleared');
-//   } catch (err) {
-//     console.error(err);
-//   } finally {
-//     mongoose.disconnect();
-//   }
-// }
