@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const dummyPlaylistSchema = new Schema ({
-  notes: Array,
+  notes: String,
   keyword: Array,
   genre: String,
   uri: String

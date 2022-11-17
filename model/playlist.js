@@ -8,7 +8,7 @@ const playlistSchema = new Schema ({
   user_id: String,
   email: String,
   name: String,
-  notes: Array,
+  notes: String,
   body: Object,
   playlist_id: String,
   keyword: Array,
