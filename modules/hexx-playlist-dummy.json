@@ -3,7 +3,7 @@
   "items": [
     {
       "collaborative": false,
-      "description": "Relax to acoustic versions of your favorite rock songs.",
+      "description": "relax to acoustic versions of your favorite rock songs.",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0rCrO4CFRfM"
       },
@@ -40,7 +40,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "love songs",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/27dY4UT0dXwIn0GJ5qTDxB"
       },
@@ -64,6 +64,7 @@
         }
       ],
       "name": "Lemon Taylor ",
+      "genre": "Indie",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -86,7 +87,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "exercise",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/2Qvl6n4ib7tl469qB6dqMt"
       },
@@ -110,6 +111,7 @@
         }
       ],
       "name": "Skate Songs",
+      "genre": "Alternative",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -132,7 +134,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/4DmbNm5e6HaGLvWpKEvTNB"
       },
@@ -179,7 +181,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/5j3u1RgzREncZrRm7MET6f"
       },
@@ -226,7 +228,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "rage",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/2OhZAN0BXwZYPREgaVVm6k"
       },
@@ -273,7 +275,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "focus",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/7KxpNGzqnlzXdQxrgF7aBV"
       },
@@ -320,7 +322,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "love songs",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/34vH5APadvRMJkb67SXul1"
       },
@@ -367,7 +369,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/4Vd29RMRbQ17HYITtlEkuc"
       },
@@ -391,6 +393,7 @@
         }
       ],
       "name": "Dulce Vida",
+      "genre": "Rock",
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -413,7 +416,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/0rst8pDrV7wTC7iZg01G2j"
       },
@@ -460,7 +463,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "rage",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/5KhRO1n3VGzzdL70jx0Klx"
       },
@@ -507,7 +510,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "holiday",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/4ZTEnQcM3IHhlZKo2sARoH"
       },
@@ -554,7 +557,7 @@
     },
     {
       "collaborative": false,
-      "description": "",
+      "description": "rage",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/3W5r6UtWIJPh1xGHJgYQBs"
       },
@@ -578,6 +581,7 @@
         }
       ],
       "name": "💀 Punk Ass Bitch",
+      "genre": "Rock", 
       "owner": {
         "display_name": "Hexx King",
         "external_urls": {
@@ -600,7 +604,7 @@
     },
     {
       "collaborative": false,
-      "description": "All the emo songs you listened to when you were a teenage dirtbag, including Teenage Dirtbag.",
+      "description": "rage",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/6Bmn4a965FPEYTp4CgCulU"
       },
@@ -647,7 +651,7 @@
     },
     {
       "collaborative": false,
-      "description": "Relax and indulge with beautiful piano pieces",
+      "description": "relax and indulge with beautiful piano pieces",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
       },
@@ -684,7 +688,7 @@
     },
     {
       "collaborative": false,
-      "description": "Me and bae = love",
+      "description": "love songs",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1aA8os1ylFZ"
       },
@@ -721,7 +725,7 @@
     },
     {
       "collaborative": false,
-      "description": "hemlocke springs tops our list of artists to watch.",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWY0DyDKedRYY"
       },
@@ -758,7 +762,7 @@
     },
     {
       "collaborative": false,
-      "description": "If it's buzzing, it's here. The hottest new songs of the week. Cover: Galantis, David Guetta & MNEK",
+      "description": "party",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8f6LHxMjnzD"
       },
@@ -795,7 +799,7 @@
     },
     {
       "collaborative": false,
-      "description": "A collection of powerful voices and alluring siren songs. ",
+      "description": "exercise",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0IyMQV27EGn"
       },
@@ -832,7 +836,7 @@
     },
     {
       "collaborative": false,
-      "description": "Set the mood just right...",
+      "description": "love songs",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXbEm2sKzgoJ8"
       },
@@ -846,6 +850,7 @@
         }
       ],
       "name": "Make Out Jams",
+      "genre": "Pop",
       "owner": {
         "display_name": "Spotify",
         "external_urls": {

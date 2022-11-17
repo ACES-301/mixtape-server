@@ -281,7 +281,7 @@ app.post('/playlist', Handlers.savePlaylist);
 app.delete('/playlist/:id', Handlers.deleteSavedPlaylist);
 
 // // Annotate playlist
-app.put('/playlists/:id', Handlers.updateNote);
+app.put('/playlist/:id', Handlers.updateNote);
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
